@@ -14,7 +14,7 @@ import (
 
 	"golang.org/x/time/rate"
 
-	nsxv3config "github.com/sapcc/nsx-t-exporter/config"
+	nsxv3config "github.com/NJSchulz/nsx-t-exporter/config"
 )
 
 const pathCreateSession = "/api/session/create"
@@ -66,7 +66,7 @@ func GetClient(c nsxv3config.NSXv3Configuration) Nsxv3Client {
 		}).Dial,
 		TLSHandshakeTimeout: timeout,
 		IdleConnTimeout:     timeout,
-		TLSClientConfig:     &tls.Config{InsecureSkipVerify: c.SuppressSslWarnings},
+		TLSClientConfig:     &tls.Config{InsecureSkipVerify: true},
 		MaxIdleConns:        c.RequestsConnPoolSize,
 		MaxIdleConnsPerHost: c.RequestsConnPoolSize,
 	}
