@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/sapcc/nsx-t-exporter/config"
-	"github.com/NJSchulz/nsx-t-exporter"
+	"github.com/NJSchulz/nsx-t-exporter/exporter"
 
 	"github.com/fatih/structs"
 	"github.com/prometheus/client_golang/prometheus"
