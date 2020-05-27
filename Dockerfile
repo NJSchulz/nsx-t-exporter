@@ -1,4 +1,4 @@
-omFROM golang:1.13-alpine as build
+FROM golang:1.13-alpine as build
 LABEL maintainer "SAP"
 
 RUN apk --no-cache add ca-certificates \
