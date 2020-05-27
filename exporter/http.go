@@ -14,7 +14,7 @@ import (
 
 	"golang.org/x/time/rate"
 
-	nsxv3config "github.com/NJSchulz/nsx-t-exporter/config"
+	nsxv3config "github.com/sapcc/nsx-t-exporter/config"
 )
 
 const pathCreateSession = "/api/session/create"
