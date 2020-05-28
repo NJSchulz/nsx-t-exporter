@@ -10,16 +10,16 @@ services:
       - 9191:9191
     image: nsx-exporter:latest 
     environment:
-      - NSXV3_LOGIN_HOST=nsx-floatin-ip.corp.local
+      - NSXV3_LOGIN_HOST=nsx-01.acme.vmware.local
       - NSXV3_LOGIN_PORT=443
       - NSXV3_LOGIN_USER=admin
-      - NSXV3_LOGIN_PASSWORD=VMwarensbu_1
-      - NSXV3_REQUESTS_PER_SECOND=<NSX-T Manager Node requestes per second [<100]>
-      - NSXV3_CONNECTION_POOL_SIZE=<NSX-T Manager Node connection pool size>
-      - NSXV3_REQUEST_TIMEOUT_SECONDS=<NSX-T Manager request timeout in seconds>
-      - NSXV3_SUPPRESS_SSL_WARNINGS=true
+      - NSXV3_LOGIN_PASSWORD=VMware1!VMware1!
+#      - NSXV3_REQUESTS_PER_SECOND=<NSX-T Manager Node requestes per second [<100]>
+#      - NSXV3_CONNECTION_POOL_SIZE=<NSX-T Manager Node connection pool size>
+#      - NSXV3_REQUEST_TIMEOUT_SECONDS=<NSX-T Manager request timeout in seconds>
+#      - NSXV3_SUPPRESS_SSL_WARNINGS=true
       - SCRAP_PORT=9191
-      - SCRAP_SCHEDULE_SECONDS=<The exporter scrap NSX-T Manager schedule in seconds>
-      - LOG_LEVEL=<NSX-T Exporter logging level.>
+#      - SCRAP_SCHEDULE_SECONDS=<The exporter scrap NSX-T Manager schedule in seconds>
+#      - LOG_LEVEL=<NSX-T Exporter logging level.>
 
 
