@@ -66,7 +66,7 @@ func GetClient(c nsxv3config.NSXv3Configuration) Nsxv3Client {
 		}).Dial,
 		TLSHandshakeTimeout: timeout,
 		IdleConnTimeout:     timeout,
-		TLSClientConfig:     &tls.Config{InsecureSkipVerify: true},
+		TLSClientConfig:     &tls.Config{InsecureSkipVerify: c.SuppressSslWarnings},
 		MaxIdleConns:        c.RequestsConnPoolSize,
 		MaxIdleConnsPerHost: c.RequestsConnPoolSize,
 	}
