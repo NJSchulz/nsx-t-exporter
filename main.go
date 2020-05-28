@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/sapcc/nsx-t-exporter/config"
+	"github.com/NJSchulz/nsx-t-exporter/config"
 	"github.com/NJSchulz/nsx-t-exporter/exporter"
 
 	"github.com/fatih/structs"
